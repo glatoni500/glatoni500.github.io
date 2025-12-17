@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Dev Network</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        .description {
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        
+        .features {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f8f9ff;
+            border-radius: 10px;
+        }
+        
+        .feature-icon {
+            font-size: 30px;
+            margin-right: 15px;
+        }
+        
+        .feature-text {
+            flex: 1;
+            color: #333;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .footer-links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+        }
+        
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9em;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #333;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🎮</div>
+        <div class="badge">🚀 Beta Version</div>
+        <h1>Roblox Dev Network</h1>
+        <p class="subtitle">Comunidad de Desarrolladores y Testers</p>
+        
+        <div class="description">
+            <p>
+                Únete a nuestra red colaborativa donde desarrolladores de Roblox se ayudan mutuamente probando sus juegos. 
+                Gana puntos jugando juegos de otros devs y úsalos para promocionar el tuyo.
+            </p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✅</div>
+                <div class="feature-text">
+                    <strong>Verificación Segura</strong><br>
+                    Vincula tu cuenta de Roblox con Discord de forma segura
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-text">
+                    <strong>Sistema de Puntos</strong><br>
+                    Gana puntos probando juegos de otros desarrolladores
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <div class="feature-text">
+                    <strong>Promociona tu Juego</strong><br>
+                    Usa tus puntos para que otros prueben tu creación
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🤝</div>
+                <div class="feature-text">
+                    <strong>Comunidad Activa</strong><br>
+                    Networking con otros desarrolladores de Roblox
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <a href="https://discord.gg/TU_INVITE_CODE" class="btn btn-primary" target="_blank">
+                📱 Unirme al Discord
+            </a>
+            <a href="https://www.roblox.com" class="btn btn-secondary" target="_blank">
+                🎮 Ver en Roblox
+            </a>
+        </div>
+        
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        
+        <p style="margin-top: 20px; color: #999; font-size: 0.85em;">
+            Not affiliated with Roblox Corporation or Discord Inc.
+        </p>
+    </div>
+</body>
+</html>
